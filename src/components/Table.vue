@@ -7,14 +7,12 @@
     "
   >
     <tr class="table__label-row">
-      <td>Номер</td>
       <td>Дата</td>
       <td>Название</td>
       <td>Количество</td>
       <td>Расстояние</td>
     </tr>
     <tr v-for="item in $store.state.table.itemsOnPage">
-      <td>{{ item.id_table }}</td>
       <td>{{ dateFormater(item.date) }}</td>
       <td>{{ item.name }}</td>
       <td>{{ item.amount }}</td>
